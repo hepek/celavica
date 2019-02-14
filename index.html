@@ -36,7 +36,7 @@
             alt_words = map[word1].map(function (m) { return transferCaps(word, m.w) })
             alt_words.push(transferCaps(word, word1))
             result = alt_words[0]
-            onclick = "onclick='selectNext(this,"+alt_words.toSource()+")'" 
+            onclick = "onclick='selectNext(this,"+JSON.stringify(alt_words)+")'" 
         }
 
         return "<span class='word " + sclass + 
